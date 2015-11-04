@@ -5,13 +5,6 @@ This is an initial draft-implementation of a possibility to use CSS to control a
 It is written to work with the [fivetwelve dmx-control library](https://github.com/beyondscreen/fivetwelve).
 
 
-## Installation
-
-Simple:
-
-    npm install --save fivetwelve fivetwelve-css
-
-
 ## Usage
 
 The CSS-parser currently only supports one or two levels of selectors (more on this later). So we can either select a device-group and applying static property values to it or selecting a group and values that only apply for a given scene.
