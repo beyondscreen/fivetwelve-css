@@ -7,23 +7,24 @@ It is written to work with the [fivetwelve dmx-control library](https://github.c
 
 ## Usage
 
-The CSS-parser currently only supports one or two levels of selectors (more on this later). So we can either select a device-group and applying static property values to it or selecting a group and values that only apply for a given scene.
+Details about how to write css-code for this can be found below. More info about how devices are configured can be found [here](https://github.com/beyondscreen/fivetwelve). From the JS side the usage looks like this:
 
 ```javascript
+import {DeviceRegistry, CssCueLoader} from 'fivetwelve-css';
+
 const registry = new DeviceRegistry();
 // configure devices and add them to the registry
-    
+
 const loader = new CssCueLoader(registry, cssText);
 
 // load the `.intro`-scene
 loader.setCue('.intro');
     
-// after two seconds switch to `.a-magician-appears` scene
+// after two seconds switch to scene `.a-magician-appears`
 setTimeout(() => loader.setCue('.a-magician-appears'), 2000);
 ```
 
 So this is basically all functionality you need to build a simple lighting-control system for stage-lighting. Replace the timeout in the example with midi-events from a controller or a web-interface and you have your light-control software.
-
 
 
 ## Concept
