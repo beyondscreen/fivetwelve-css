@@ -1,0 +1,28 @@
+{
+  "name": "fivetwelve-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel/register test/{**/,}*Test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "eslint": "^1.7.3",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2"
+  },
+  "dependencies": {
+    "array.from": "^0.2.0",
+    "fivetwelve": "^0.2.0",
+    "intersect": "^1.0.1",
+    "object-assign": "^4.0.1",
+    "rework": "^1.0.1"
+  }
+}
