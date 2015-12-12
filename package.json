@@ -21,6 +21,14 @@
   },
   "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
   "license": "GPL-3.0",
+  "homepage": "https://github.com/beyondscreen/fivetwelve-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyondscreen/fivetwelve-css"
+  },
+  "bugs": {
+    "url": "https://github.com/beyondscreen/fivetwelve-css/issues"
+  },
   "devDependencies": {
     "babel": "^5.8.23",
     "eslint": "^1.7.3",
