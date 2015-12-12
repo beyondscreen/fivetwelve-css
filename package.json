@@ -1,16 +1,25 @@
 {
   "name": "fivetwelve-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
+  "keywords": [
+    "dmx",
+    "dmx512",
+    "lighting",
+    "light-control",
+    "css",
+    "fivetwelve"
+  ],
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel/register test/{**/,}*Test.js",
-    "prepublish": "babel -d lib-es5 lib"
+    "test": "mocha --compilers js:babel/register test/{**/,}*Test.js && eslint lib/ test/",
+    "compile": "babel -d lib-es5 lib",
+    "prepublish": "npm run test && npm run compile"
   },
-  "author": "",
+  "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
   "license": "GPL-3.0",
   "devDependencies": {
     "babel": "^5.8.23",
@@ -20,7 +29,7 @@
     "sinon": "^1.17.2"
   },
   "peerDependencies": {
-    "fivetwelve": "^0.2.0"
+    "fivetwelve": "*"
   },
   "dependencies": {
     "array.from": "^0.2.0",

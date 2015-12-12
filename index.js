@@ -1,7 +1,2 @@
-import CssCueLoader from './lib/CssCueLoader';
-import DeviceRegistry from './lib/DeviceRegistry';
-
-export default {
-  CssCueLoader,
-  DeviceRegistry
-};
+export {default as CssCueLoader} from './lib/CssCueLoader';
+export {default as DeviceRegistry} from './lib/DeviceRegistry';
