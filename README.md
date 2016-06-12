@@ -126,7 +126,7 @@ gets to control the final computed dmx channel-value.
 The same goes for something that is often seen with gobos for 
 moving-heads: Depending on the values of the gobo-selection channel 
 the gobo-rotation-channel will either behave as fixed rotation for 
-positioning or rotation speed for continous rotation. In this case a 
+positioning or rotation speed for continuous rotation. In this case a 
 setting of the rotation-speed could overwrite a value for the 
 rotation-position, depending on the operation-mode of the device.
 
